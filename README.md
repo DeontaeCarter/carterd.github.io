@@ -1,0 +1,1 @@
+This webpage is dedicated to my coursework for the Digital Systems Fundamentals class at Central Washington University. It features seven weeks of individual assignments focused on developing a functional website with an efficient user interface and navigation panel.
