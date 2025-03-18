@@ -1,0 +1,259 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.highlight {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background: #fff;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Main Content */
+main {
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Article Section */
+.main-section {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+
+.article-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+.article-image {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+
+
+button {
+    padding: 10px 20px;
+    font-size: 16px; 
+    background-color: #007BFF; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+
+/* Aside Section */
+aside {
+    background: #fff;
+    padding: 30px;
+    border-left: 2px solid #dcdcdc; /* Vertical Line */
+}
+
+aside img {
+    width: 100%;
+}
+
+.expand {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 10px;
+    color: #666;
+}
+
+.expand:hover {
+    color: #ffcc00;
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+h2 {
+    text-align: left;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns items at the top */
+    padding: 10px 20px;
+    border-top: 2px solid black; 
+    border-bottom: 2px solid black; 
+    color: black; /* Sets text color */
+    margin-bottom: 10px;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column; 
+    text-align: right;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+
+
+.subsection {
+    display: flex;
+    justify-content: center; /* Centers the images with controlled spacing */
+    gap: 1px; /* Very small space between images */
+}
+
+
+.subsection figure {
+    background: #fff;
+    text-align: center;
+    overflow: hidden; /* Ensures no overflow */
+    padding: 0; /* Remove padding */
+}
+
+.subsection img {
+    width: 100%; /* Makes the image fill the entire width */
+    height: auto;
+    display: block;
+}
+
+.subsection figcaption {
+    background-color: #f0f0f0; /* Background color for caption */
+    padding: 2px;
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+}
+
+p {
+    font-size: 16px;
+}
+
+header h1 {
+    display: inline-block; 
+    transform: rotate(-5deg); 
+    transform-origin: center; 
+}
+
+.highlight {
+    display: inline-block; 
+    background-color: rgb(139, 7, 7); 
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 8px; 
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'JosefinSlab';
+    src: url('fonts/josefinslab-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply it to a specific class */
+.josefin-text {
+    font-family: 'JosefinSlab', serif;
+}
